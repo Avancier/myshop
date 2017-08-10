@@ -7,13 +7,12 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('coupons', '0001_initial'),
+        ('shop', '0001_initial'),
     ]
 
     operations = [
-        migrations.RenameField(
-            model_name='coupon',
-            old_name='vaild_from',
-            new_name='valid_from',
+        migrations.AlterModelOptions(
+            name='product',
+            options={'ordering': ('-created',)},
         ),
     ]
